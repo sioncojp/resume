@@ -25,6 +25,8 @@ https://speakerdeck.com/sioncojp
 - batch: fargate runtask
 - cron: fargete + cloudwatch logging
 - logging: firehose, datadog logs, s3
+- [Cron system architecture with Fargate + cloudwatch event](https://sioncojp.hateblo.jp/entry/2019/09/06/125617)
+- [Cron system logging design with Fargate + cloudwatch event](https://sioncojp.hateblo.jp/entry/2019/09/10/183409)
 
 #### Design and implement AWS ECS/Fargate platform
 - logging: firehose, datadog logs, s3 / fluentd
