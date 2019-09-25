@@ -2,11 +2,11 @@
 1987/12/28 生まれ
 元プロゲーマーで、2012年CS1.6のアジアチャンピオン
 
-http://qiita.com/sion_cojp
-https://github.com/sioncojp
-https://sioncojp.hateblo.jp
-https://www.slideshare.net/shoheikoyama77/presentations
-https://speakerdeck.com/sioncojp
+- qiita: http://qiita.com/sion_cojp
+- github: https://github.com/sioncojp
+- blog: https://sioncojp.hateblo.jp
+- slideshare: https://www.slideshare.net/shoheikoyama77/presentations
+- speakerdeck: https://speakerdeck.com/sioncojp
 
 # 学歴
 - 広島修道高等学校卒
@@ -21,6 +21,8 @@ https://speakerdeck.com/sioncojp
 - batch: fargate runtask
 - cron: fargete + cloudwatch logging
 - logはdatadog logsへ
+- [Fargate + cloudwatch eventでcronシステム構築](https://sioncojp.hateblo.jp/entry/2019/09/06/125617)
+- [Fargate + cloudwatch eventでcronシステム ロギング設計編](https://sioncojp.hateblo.jp/entry/2019/09/10/183409)
 
 #### ECS検証、設計、module化、本番導入
 - logging周りはs3 + datadog logsに飛ばす設計
