@@ -17,8 +17,67 @@ https://speakerdeck.com/sioncojp
 
 
 # Career
+## Timee
+2019/1/5 ~ 
+
+### Job description
+
+#### SSO for each SaaS
+- aws
+- datadog
+- sentry
+
+#### datadog operation from terraform + architecture dashboard/alert
+- Until now, manually set datadog, but now it with Terraform.
+- Also added dashboard / alert settings
+- As a result, it was possible to respond to a failure only when an alert was triggered
+
+#### rails c command for Fargate architectrue
+- As a task of rails on fargate, there was a problem that `rails c` could not be hit because the host or container could not be ssh.
+- Also, since RDS only allows access from the basic private subnet, the only option is to allow access from a private instance.
+- Launch a cli tool for rails c in Golang, doing the following
+    - Saml authentication such as `saml2aws` is required.
+    - Post a session on EC2 with session manager
+    - Decrypt the parameter store data and set it to environment variables
+    - Get commitHash value associated with prod / stg tag from ECR
+    - Set required arguments + launch docker with commitHash image
+#### firelens on Fargate
+- before: Fargate-> cloudwatch-> firehose-> lambda-> datadog, s3
+- after: fargate-> firehose-> datadog, s3
+- so simple and cost-saving
+
+#### Launch slack-deploy
+- Enabled to deploy from slack
+- slack-deploy is an in-house Golang tool
+- https://twitter.com/i/status/1217724217350733824
+
+#### jemalloc with Rails
+- Jemalloc support to secure memory while preventing memory fragmentation due to memory leak
+- Dockerfile modification
+
+#### Rails on EC2 -> Fargate: staging, production
+- Launch ecs-deploy in-house Golang tool
+    - ECS task definition generation and registration
+    - ECS service update
+    - Fargate, cron (cloudwatch + fargate), runtask can be executed
+- Encrypted information is stored in SSM parameter store
+    - Launch Golang tool to manage parameter store
+    - Https: //github.com/sioncojp/pstore
+
+#### Verification fargate, cron(cloudwatch + fargate), runtaskを検証 and create Each Tutorial
+- Verification because there was no knowledge whether it is able to apply to rails. and create tutorial
+ 
+#### AWS re-architecture
+- AWS multi account Configuration (root, prod, stg, operation, sandbox ....)
+- Compatible with GSuite SSO. And create IAN module
+    - RBAC Base
+    - Assume role with root account
+    - Each account has limited permissions
+- Recreate from VPC
+- terraform execute `make` command
+
 ## FOLIO
-2018/5 ~ 
+2018/5 ~ 2019/1/4
 
 ### Job description 
 #### Design and implement batch / cron execution platform to run on AWS Fargate

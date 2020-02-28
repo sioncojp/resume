@@ -13,8 +13,68 @@
 - 日本電子専門学校コンピューターネットワーク科卒
 
 # 職歴
+## Timee
+2020/1/5 ~ 現在まで
+
+### 業務内容
+#### 各SaaSのSSO化
+- datadog
+- sentry
+- aws
+
+#### datadogのterraform化 + dashbaord/アラート設計
+- datadogを手動で追加してたのをterraform化。
+- また適切なアラートやdashboard/アラートがなかったので追加
+- その結果アラートがなったときだけ障害対応する状況にすることができた
+
+#### rails cを叩けるようにした
+- rails on fargateのつらみとして、ホストやコンテナにsshできないので、rails cが叩けない問題があった
+- また、RDSは基本private subnetからのアクセスしか許可してないので、privateのインスタンスからアクセスさせるしかない。
+- そこにどうセッションはるかという課題。
+- Goでrails c用cliツールを作成し、下記を行なっている
+    - saml2aws等でのsaml認証が必須。
+    - ec2にセッションマネージャでセッションを貼る
+    - ParameterStoreのデータをdecryptして環境変数にセット
+    - ECRからprod/stgのタグに紐づいてるcommitHash値取得
+    - 必要な引数をセット + commitHashイメージでdockerを立ち上げる
+
+#### 全Fargateをfirelensに移行
+- 今まではawslogsドライバーを使ってたので、fargate ->cloudwatch -> firehose -> lambda -> datadog, s3
+- firelensに移行することで、fargate -> firehose -> datadog, s3とシンプルかつコスト削減化 
+
+#### slack deploy導入
+- slackからdeployできるようにした
+- slack-deployは社内ツールで、Goで作ってます
+- https://twitter.com/i/status/1217724217350733824
+
+#### Railsのjemalloc対応
+- メモリリークしてたので、メモリの断片化を防ぎながらメモリを確保していくjemalloc対応
+- Dockerfileの修正のみ
+
+#### Rails on EC2 -> Fargate
+- Goでecs-deployという社内ツール作成
+    - ecs task definition生成、登録
+    - ecs serviceのupdate
+    - fargate, cron(cloudwatch + fargate), runtaskを実行できる
+- 暗号情報はSSM parameter storeに入れた
+    - parameter storeを管理するGoツールを作成
+    - https://github.com/sioncojp/pstore
+
+#### fargate, cron(cloudwatch + fargate), runtaskを検証 + チュートリアル作成
+- railsに適用できるか知見がなかったので検証。チュートリアルも作成
+
+#### aws再設計作り直し
+- awsアカウントのマルチアカウント構成（root, prod, stg, operation, sandbox....)
+- GSuite SSO対応。それによるiam module作成
+    - RBACで、各部署のロールベースにiam roleを作成
+    - そのroleをrootアカウントでassume role
+    - それぞれのアカウントで権限を絞ってる
+- VPCから再作成
+- makeでterraformが叩けるようにした
+
+
 ## FOLIO
-2018/5 ~ 現在まで
+2018/5 ~ 2019/1/4
 
 ### 業務内容
 #### batch/cron実行基盤をFargateで実行できるように設計、導入
