@@ -8,6 +8,12 @@
 - slideshare: https://www.slideshare.net/shoheikoyama77/presentations
 - speakerdeck: https://speakerdeck.com/sioncojp
 
+下記をベースに従事しております。
+- 自由を与える代わりにチームとして責任もって働く
+- 建設的でロジカルな議論をする
+- サービスの成長と売上に貢献するために結果を出す
+- SREだけど必要であればサーバサイドのコードにもコミットしていく
+
 # 学歴
 - 広島修道高等学校卒
 - 日本電子専門学校コンピューターネットワーク科卒
@@ -16,14 +22,63 @@
 ## Timee
 2020/1/5 ~ 現在まで
 
-### 業務内容
+### 業務内容: コーポレートエンジニア
+#### オフィスネットワーク構築
+- L3, L2, AP
+- 着手中
+
+#### MDM
+- 着手中
+
+#### リモートワークにおける書籍管理の刷新
+- 着手中
+
+#### セキュリティソフト導入と運用
+- 着手中
+
+### 業務内容: DRE
+#### DRE業務のリード
+- 兼務が多くコードはあまり書けないが、リード業をチームから依頼されてやっております
+- 主に横断的に事業をみて、DREに関わるところをキャッチアップして先回りして提案やチームに落とし込み
+- チームがうまく進むための建設的議論の参加
+- メンバーが書いたコードのレビュー + 運用（バグが発生したら修正するなど）
+
+#### gcpをterraformで管理
+- gcpをterraformから叩けるようにした
+- project作成からterraformで管理するようにした
+- IAM, service account周りの設計
+
+#### 分析基盤をどう作っていくか頭出し
+- 既存のコードが単一リポジトリに集約されてたので把握
+- DL -> ETL -> DW -> DM の流れでBQを活用した設計提案とチーム作り、キックオフをした
+
+### 業務内容: SRE
+#### チームマネジメント
+- https://sioncojp.hateblo.jp/entry/2020/04/06/153619
+- 1on1は最初は週1。徐々に週2にずらしていく
+- 成果が出やすい働き方と、可能性を広げるための1on1をおこなっていく
+
+#### 社内next.js boilerplateにDockerfileを追加
+- Docker環境がなかったので追加
+- makeコマンドで立ち上げれるようにした
+```shell
+$ make help
+docker/dev/build       docker build
+docker/dev/run         docker起動
+docker/ecs/build       docker build
+docker/ecs/run         docker起動
+```
+
+#### railsをコンテナで動かした時のmemory leak対応
+- to be continued
+
 #### 各SaaSのSSO化
 - datadog
 - sentry
 - aws
 
 #### datadogのterraform化 + dashbaord/アラート設計
-- datadogを手動で追加してたのをterraform化。
+- datadogを手動で追加してたのをterraform化
 - また適切なアラートやdashboard/アラートがなかったので追加
 - その結果アラートがなったときだけ障害対応する状況にすることができた
 

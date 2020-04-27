@@ -11,6 +11,12 @@ https://sioncojp.hateblo.jp
 https://www.slideshare.net/shoheikoyama77/presentations
 https://speakerdeck.com/sioncojp
 
+I have philosophy on the following. 
+- Work responsibly as a team instead of giving freedom
+- Constructive and logical discussions
+- Contribute to service growth and sales and get results.
+- SRE but commit to ServerSide code if necessary
+
 # Educational background
 - Graduated Hiroshima Shudou High School
 - Graduated Japan Electronics College: Computer Network department
@@ -20,7 +26,54 @@ https://speakerdeck.com/sioncojp
 ## Timee
 2019/1/5 ~ 
 
-### Job description
+### Job description: Corporate Engineer
+#### Architecture office network
+- to be continued
+
+#### MDM
+- to be continued
+
+#### Book purchase in remote work
+- to be continued
+
+#### Security software in company
+- to be continued
+
+### Job description: DRE
+#### Lead of DRE work
+- There are many additional posts and I can not write much code. But the team is requesting the lead business
+- Mainly cross-sectional business, catching up on DRE related parts and proactively putting it into proposals and teams
+- Participate in constructive discussions to help teams progress
+- Review of code written by members + operation (fix bugs and etc...)
+
+#### Manage gcp with terraform
+- Install gcp to terraform
+- GCP Project crete by terraform
+- Architecture around IAM, service account
+
+#### Cue how to make an analysis base
+- Figure out existing code in a repository
+- DL-> ETL-> DW-> DM, architecture proposal using BigQuery and team building, kicked off
+
+### Job description: SRE
+#### Team management
+- https://sioncojp.hateblo.jp/entry/2020/04/06/153619
+- 1on1 is weekly at first. Gradually shift to 2 per week
+- Carry out 1on1 to work ways that are likely to get results and to expand the possibilities
+
+#### Add Dockerfile to in-house next.js boilerplate
+- because there was no Docker environment
+- Enabled to start with make command
+```shell
+$ make help
+docker/dev/build       docker build
+docker/dev/run         docker起動
+docker/ecs/build       docker build
+docker/ecs/run         docker起動
+```
+
+#### Memory leak support when running rails in a container
+- to be continued
 
 #### SSO for each SaaS
 - aws
