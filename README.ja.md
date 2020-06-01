@@ -129,7 +129,7 @@ docker/ecs/run         docker起動
 
 
 ## FOLIO
-2018/5 ~ 2019/1/4
+2018/5 ~ 2020/1/4
 
 ### 業務内容
 #### batch/cron実行基盤をFargateで実行できるように設計、導入

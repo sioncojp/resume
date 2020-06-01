@@ -24,7 +24,7 @@ I have philosophy on the following.
 
 # Career
 ## Timee
-2019/1/5 ~ 
+2020/1/5 ~ 
 
 ### Job description: Corporate Engineer
 #### Architecture office network
@@ -130,7 +130,7 @@ docker/ecs/run         docker起動
 - terraform execute `make` command
 
 ## FOLIO
-2018/5 ~ 2019/1/4
+2018/5 ~ 2020/1/4
 
 ### Job description 
 #### Design and implement batch / cron execution platform to run on AWS Fargate
