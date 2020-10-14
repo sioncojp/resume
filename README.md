@@ -27,17 +27,26 @@ I have philosophy on the following.
 2020/1/5 ~ 
 
 ### Job description: Corporate Engineer
-#### Architecture office network
-- to be continued
+#### create terraform-provider for jamf
+- https://github.com/sioncojp/go-jamf-api
+- https://github.com/sioncojp/terraform-provider-jamf
+- https://registry.terraform.io/publish/provider/github/sioncojp/terraform-provider-jamf
+
+#### Checking flow for validity against invoices
+- Sending each SaaS billing email to the slack and responding to it
+- Also, as a criterion, it points to a slack pined for how much a pay-as-you-go or flat rate would be.
+
+#### building an office network.
+- Building a network of new offices
+- Constructed in L3, L2 and AP (all meraki)
+- All diagrams, operating procedures and information are managed on github.
+- ref: https://tech.timee.co.jp/entry/2020/07/20/135854
 
 #### MDM
-- to be continued
+- jamf proposal -> Introduction
 
-#### Book purchase in remote work
-- to be continued
-
-#### Security software in company
-- to be continued
+#### security software installation and operation.
+- Introducing crowdstrike.
 
 ### Job description: DRE
 #### Lead of DRE work
@@ -56,6 +65,26 @@ I have philosophy on the following.
 - DL-> ETL-> DW-> DM, architecture proposal using BigQuery and team building, kicked off
 
 ### Job description: SRE
+#### verification of terraform 0.12 -> 0.13
+https://sioncojp.hateblo.jp/entry/2020/10/13/195117
+
+#### Design and build/operate infrastructure for a new business (Timey Delivery)
+- Creating an aws account
+- Create vpc
+- Transfer route 53 operations to each account
+- Creating RDS/ElastiCache
+- added support for service, cron and runtask in ECS(Fargate)
+- Creating a deploy mechanism (chatops via slack)
+- ACM Creation
+- Creating redash
+- peering, etc.
+- As for the front end, github actions can be used to deploy
+- The part of the GCP that needed to be done with GCP was done with terraform.
+
+#### Building each LP site.
+- Built with s3 webhostring + cloudfront or went with vercel
+- so this site https://timee.co.jp/jobs/
+
 #### Team management
 - https://sioncojp.hateblo.jp/entry/2020/04/06/153619
 - 1on1 is weekly at first. Gradually shift to 2 per week

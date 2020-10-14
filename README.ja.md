@@ -23,18 +23,29 @@
 2020/1/5 ~ 現在まで
 
 ### 業務内容: コーポレートエンジニア
+#### jamfのterraform-provider作成
+- https://github.com/sioncojp/go-jamf-api
+- https://github.com/sioncojp/terraform-provider-jamf
+- https://registry.terraform.io/publish/provider/github/sioncojp/terraform-provider-jamf
+
+#### 請求書に対して妥当かどうかのチェックフロー
+- 各SaaSのbillingメールをslackに飛ばして、それにレスポンスする形
+- また判断基準として、従量課金or定額ならいくらか、をslackのpinedに指している
+
+#### 各サービスのSSO設定
+- 出来るところまでdone
+
 #### オフィスネットワーク構築
-- L3, L2, AP
-- 着手中
+- 新しいオフィスのネットワークを構築
+- L3, L2, AP（全てmeraki）で構築
+- 構成図、運用手順、情報等は全てgithubで管理
+- ref: https://tech.timee.co.jp/entry/2020/07/20/135854
 
 #### MDM
-- 着手中
-
-#### リモートワークにおける書籍管理の刷新
-- 着手中
+- jamfの提案 -> 導入
 
 #### セキュリティソフト導入と運用
-- 着手中
+- crowdstrikeを導入
 
 ### 業務内容: DRE
 #### DRE業務のリード
@@ -53,6 +64,26 @@
 - DL -> ETL -> DW -> DM の流れでBQを活用した設計提案とチーム作り、キックオフをした
 
 ### 業務内容: SRE
+#### terraform 0.12 -> 0.13の検証
+- https://sioncojp.hateblo.jp/entry/2020/10/13/195117
+
+#### 新規事業（タイミーデリバリー）のインフラ設計と構築/運用
+- awsアカウントの作成
+- vpc作成
+- route53操作を各アカウントに移管
+- RDS/ElastiCache作成
+- ECS(Fargate)でservice, cron, runtaskが実行できるようにした
+- deploy機構作成（slack経由のchatops）
+- ACM作成
+- redash作成
+- peering等
+- フロントエンドに関してはgithub actionsでdeploy出来るようにした
+- GCPで必要な部分はterraformで行った
+
+#### 各LPサイトの構築
+- s3 webhostring + cloudfrontで構築 or vercelで行ったりした
+- https://timee.co.jp/jobs/
+
 #### チームマネジメント
 - https://sioncojp.hateblo.jp/entry/2020/04/06/153619
 - 1on1は最初は週1。徐々に週2にずらしていく
@@ -70,7 +101,7 @@ docker/ecs/run         docker起動
 ```
 
 #### railsをコンテナで動かした時のmemory leak対応
-- to be continued
+- to be continue
 
 #### 各SaaSのSSO化
 - datadog
