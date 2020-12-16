@@ -57,7 +57,7 @@ I have philosophy on the following.
 
 #### Manage gcp with terraform
 - Install gcp to terraform
-- GCP Project crete by terraform
+- GCP Project create by terraform
 - Architecture around IAM, service account
 
 #### Cue how to make an analysis base
