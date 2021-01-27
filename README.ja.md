@@ -22,6 +22,17 @@
 ## Timee
 2020/1/5 ~ 現在まで
 
+### その他
+- VPoEっぽい動きをしてました
+    - 基本的にCTOと密に思考/定義/浸透
+    - エンジニア採用フローを整備（DMでやりとりしてたのを、出来る限りオープンなやりとりができるようにした）
+    - 人事評価の定義
+    - 全ポジションのJobDescription設定と、githubで管理するようにした
+    - エンジニアのルールをgithubで管理するようにし、検索性をあげた
+    - mgrのmgrっぽい動き
+    - KGI -> NorthStarMetric -> KPI -> OKRの落とし込み計画
+    - 組織戦略と経営戦略（長期計画等々。NDAレベルが多いので詳しくかけないです）
+
 ### 業務内容: コーポレートエンジニア
 #### jamfのterraform-provider作成
 - https://github.com/sioncojp/go-jamf-api
