@@ -34,6 +34,9 @@
     - 組織戦略と経営戦略（長期計画等々。NDAレベルが多いので詳しくかけないです）
 
 ### 業務内容: コーポレートエンジニア
+#### アウトプット
+- [増え続けるXaaSのユーザ管理をソフトウェア化していくお話](https://tech.timee.co.jp/entry/2020/10/26/173731)
+
 #### jamfのterraform-provider作成
 - https://github.com/sioncojp/go-jamf-api
 - https://github.com/sioncojp/terraform-provider-jamf
