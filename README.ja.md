@@ -19,8 +19,55 @@
 - 日本電子専門学校コンピューターネットワーク科卒
 
 # 職歴
+## Chikaku
+2021/3/1 ~ 現在まで
+
+### 業務内容
+#### 新サービス（API + Frontend）の構築、運用
+- ２サービスをFargateで提供
+- Frontendはvue + s3 + cloudfrontで、github actionsでCDを提供
+- どちらもローカルで動くものを読解し、コード修正を施し、awsで稼働させた
+
+#### datadogのterraform化
+- awsのアカウント連携も全てterraformで管理するようにした
+
+#### セキュリティ強化
+- 自社サイトハッキングしたりそれをベースに強化していった
+
+#### DBの統合
+- 無駄なDBインスタンスがあったので、1つのRDSに統合した
+
+#### RDSのAurora移行とRI購入
+- https://sioncojp.hateblo.jp/entry/2021/06/18/153741
+
+#### Fargate: cron移行
+- 定期実行系をEC2 -> Fargateに移行
+- 既存サービスのリバースエンジニアリング
+- どんなロジックで処理をしているのかを資料にまとめて移行した
+
+#### Fargate: runtask移行
+- DB Migration系をruntaskで実行するようにした 
+
+#### Fargate: service移行
+- APIサーバをEC2 -> Fargateに移行
+- 既存capistranoの処理を把握し、その上で移行
+
+#### Fargate環境のベース部分の構築
+- Fargate用module追加
+- Faraget Spotを使うようにした
+- Fargateのsandbox環境の構築、資料作成と説明
+- https://github.com/sioncojp/pstore 導入
+- https://github.com/sioncojp/ecs-update-notify 導入
+- Fargate用deployロジック追加
+- CI/CDの整備
+- datadog logs archiveの導入
+- firehose -> firelensにした
+
+#### AWSのコスト削減
+
+
 ## Timee
-2020/1/5 ~ 現在まで
+2020/1/5 ~ 2021/3/1
 
 ### その他
 - VPoEっぽい動きをしてました
