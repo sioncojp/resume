@@ -23,10 +23,42 @@
 2021/3/1 ~ 現在まで
 
 ### 業務内容
+#### 新サービスのAPI/batch設計
+- Goで実装中
+- API、テーブル設計、インフラまで全て実装
+- メンバー3名
+
+#### 次のサービスで使うGoのフレームワークサンプルを作成
+- クリーンアーキテクチャベース
+- docker-composeでDBにアクセスするtodoアプリ
+- migrateの方法、testの書き方や実装の説明を社員に説明
+- makeでコマンドを用意
+```shell
+$ make help
+dist                    create .tar.gz linux & darwin to /bin
+clean                   このMakefileで利用したファイルをクリアにする
+build                   build
+build/cross             create to build for linux & darwin to bin/
+run                     go run
+run/binary              run binary
+go/get                  特定のパッケージをgo getする
+go/mod_tidy             不要なgo packageを削除する
+go/test                 go test
+docker/build            docker build
+docker_compose/up       compose起動
+docker_compose/down     compose停止
+docker_compose/down_all  compose停止 + 全てを初期化する
+docker_compose/rebuild  appだけbuildし直す
+migrate/up              migration. docker compose up後に実行できる
+migrate/down            migrationのrollback. docker compose up後に実行できる
+migrate/create          migrationファイル作成. migrations/ にup/downが作成される
+```
+
 #### 新サービス（API + Frontend）の構築、運用
 - ２サービスをFargateで提供
 - Frontendはvue + s3 + cloudfrontで、github actionsでCDを提供
 - どちらもローカルで動くものを読解し、コード修正を施し、awsで稼働させた
+- サービスがdjangoだったので、datadog logsにうまく流せるようlogger実装
 
 #### datadogのterraform化
 - awsのアカウント連携も全てterraformで管理するようにした
