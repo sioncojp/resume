@@ -25,15 +25,22 @@
 2021/3/1 ~ 現在まで
 
 ### 業務内容
+#### flutterでアプリ開発検証
+- now
+
+#### 写真プリントサービスのSLI/SLOの策定とdatadogで設定
+- 全てterraformで管理
+
 #### 経営周りの手伝い
 - 会社全体のMVVと戦略, プロダクトの戦略の策定
 
-#### 新サービスのAPI/batch設計
+#### 写真プリントサービスのAPI/batch設計と実装と開発体制の改善
 - Goで実装中
 - API、テーブル設計、インフラまで全て実装
 - メンバー3名
+- ref: https://sioncojp.hateblo.jp/entry/2022/06/13/190923
 
-#### 次のサービスで使うGoのフレームワークサンプルを作成
+#### 写真プリントサービスで使うGoのフレームワークサンプルを作成
 - クリーンアーキテクチャベース
 - docker-composeでDBにアクセスするtodoアプリ
 - migrateの方法、testの書き方や実装の説明を社員に説明
@@ -59,7 +66,7 @@ migrate/down            migrationのrollback. docker compose up後に実行で�
 migrate/create          migrationファイル作成. migrations/ にup/downが作成される
 ```
 
-#### 新サービス（API + Frontend）の構築、運用
+#### テレビ電話サービス（API + Frontend）の構築、運用
 - ２サービスをFargateで提供
 - Frontendはvue + s3 + cloudfrontで、github actionsでCDを提供
 - どちらもローカルで動くものを読解し、コード修正を施し、awsで稼働させた
