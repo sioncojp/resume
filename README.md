@@ -28,7 +28,7 @@
 #### flutterでアプリ開発検証
 - now
 
-#### 写真プリントサービスのSLI/SLOの策定とdatadogで設定
+#### 写真プリントサービスのモニタリングとSLI/SLOの策定とdatadogで設定
 - 全てterraformで管理
 
 #### 経営周りの手伝い
