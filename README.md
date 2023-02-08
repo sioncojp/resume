@@ -9,20 +9,36 @@
 - blog: https://sioncojp.hateblo.jp
 - slideshare: https://www.slideshare.net/shoheikoyama77/presentations
 - speakerdeck: https://speakerdeck.com/sioncojp
+- note: https://note.com/sion_cojp
 
 下記をベースに従事しております。
 - 自由を与える代わりにチームとして責任もって働く
 - 建設的でロジカルな議論をする
 - サービスの成長と売上に貢献するために結果を出す
-- SREだけど必要であればサーバサイドのコードにもコミットしていく
 
 # 学歴
 - 広島修道高等学校卒
 - 日本電子専門学校コンピューターネットワーク科卒
 
 # 職歴
+## DXER
+2022/10/1 ~ 現在
+### 経営周り
+- 長期ロードマップからのタスク分解、優先順位付け
+- 事業戦略や採用、その他色々
+
+### PM
+- PRD/UserFlow作成
+- 簡易的なUIを作成
+- それをベースとしてチケット作成
+- スクラムマスターっぽいことしてます
+
+### バックエンド開発/設計
+- 社内プロダクトのバックエンド設計/開発とレビュー
+- Go x GraphQL
+
 ## Chikaku
-2021/3/1 ~ 現在まで
+2021/3/1 ~ 2022/9/30
 
 ### 業務内容
 #### 経営周りの手伝い
