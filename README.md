@@ -32,6 +32,7 @@
 
 ### PdM
 - PRD/UserFlow作成
+- 色々やってます
 
 ### Design
 - Material Design 3 x TailwindベースのFigmaでUIデザイン
@@ -39,6 +40,13 @@
 ### バックエンド開発/設計
 - 社内プロダクトのバックエンド設計/開発とレビュー
 - Go x GraphQL
+
+### フロントエンド開発
+- Next.js + Tailwind + storybook
+
+### 自社Chrome Extension開発/設計
+- React
+- 自社BPO用のツールとしてなにもないところから開発
 
 ## Chikaku
 2021/3/1 ~ 2022/9/30
