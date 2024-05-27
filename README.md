@@ -45,19 +45,20 @@
 - 採用
 
 ### シスクル事業
-- 全部署の業務プロセス、マニュアル、オンボーディングの要件定義、設計、構築と運用
-  - CS
-  - COS
-  - Sales
-  - Solution Architect
-  - SolutionEngineer
-  - SystemAdministrator
-  - Dev
+- 全部署の立ち上げと実務、業務プロセス確立、マニュアル作成、
+  - CS...顧客のLTVを伸ばすために
+  - COS...シスクル事業をスムーズに使うためのオンボーディングスペシャリスト
+  - Sales...セールス資料作成、料金定義、顧客と商談
+  - Solution Architect...顧客の情シス業務の設計
+  - SolutionEngineer...顧客の情シス業務の実装、マニュアル作成し、SystemAdministratorに落とし込み
+  - SystemAdministrator...マニュアル作業、ヘルプデスク作業
+  - Dev...SystemAdministrator向け開発、ドメインエキスパートとしてアドバイス、何をどの順に開発するか顧客の意見をdevに伝える
 - 全メンバー、全部署のマネジメント
+  - https://speakerdeck.com/sioncojp/cheng-chang-wosahotosuruhihurumanesimentonoyarifang
 
 ### PdM
-- PRD/UserFlow作成
-- 色々やってます
+- PRD/UserFlow issue作成し、メンバーと議論
+- 顧客の意見ヒアリング
 
 ### Design
 - Material Design 3 x TailwindベースのFigmaでUIデザイン
