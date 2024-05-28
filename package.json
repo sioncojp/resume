@@ -1,0 +1,15 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sioncojp/resume.git",
+  "author": "sioncojp <sion_cojp@yahoo.co.jp>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx md-to-pdf ./*.md && mv README.pdf resume-shohei-koyama.pdf",
+    "clean": "rm -rf README.pdf resume-shohei-koyama.pdf"
+  },
+  "dependencies": {
+    "md-to-pdf": "^5.2.4"
+  }
+}
