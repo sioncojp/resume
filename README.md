@@ -21,10 +21,22 @@ Shohei "Sion" Koyama
 # 職歴
 ## Techouse
 2024/08/01 ~ 現在
-- 新しい社内管理画面の構想と提案、現場の方と連携しながらGoとNext.js（graphQL）で開発
+- 新しい社内管理画面の構想と提案、現場の方と連携しながらGoとNext.js（GraphQL）で新規開発
   - 工数を削減、プロセスの統一化と導入の敷居を下げるためのUI/UX
   - MLでコンテンツベースフィルタリンスするために、レコメンドで使えるようにデータモデリング化
   - LLMを使って機械的にできる限り解決するための基盤の準備
+  - 技術スタック: Go
+  	- GraphQL: gqlgen
+	  - ORM: Gorm
+	  - Generate DB Schema: xo
+	  - Routing: chi
+	  - Logging: zap
+  - 技術スタック: Next.js
+	  - TypeScript
+  	- GraphQL: Apollo Client
+  	- CSS: Tailwind
+  	- Page Router
+  	- Storybook
 - Railsモノリスでユーザ向け機能開発
 
 ## DXER COO
