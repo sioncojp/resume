@@ -192,7 +192,7 @@ keepalived, nginx, openstack, cisco, vyos, drbd, ldap
 nfs, kvm, mackerel, nagios, munin, chef, ansible, packer, vagrant
 
 ## ビットアイル
-2008/4 ~ 2012/6
+2009/4 ~ 2012/6
 
 ### 業務内容
 - データセンターのレンタルサーバ、ネットワーク構築運用
